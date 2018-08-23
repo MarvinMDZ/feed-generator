@@ -7,3 +7,34 @@ For this project we needed to create a cron in our server to process two differe
 
 This process will execute automatically each 24h.
 
+#Config File
+
+The config file contains an array with all the necesary paths.
+
+#Example
+
+```php
+
+<?php
+	error_reporting(E_ALL | E_STRICT);
+	ini_set('display_errors', true);
+	ini_set('auto_detect_line_endings', true);
+
+	$config = array(
+		'currentMonthPath' => '',
+		'nextMonthPath' => '',
+		'ctaPath' => '',
+		'outputPath' => '',
+		'originalImagePath' => '',
+		'cloneDirectory' => '',
+		'finalImagePath' => '',
+		'nodesCSV' => '',
+		'guideUrl' => '',
+		'baseUrl' => '',
+		'utms' => ''
+	);
+
+?>
+
+```
+
